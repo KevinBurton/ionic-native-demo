@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-navbar primary>
+        <button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Device</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <div>
+         <h3 *ngIf="deviceInfo">Cordova: {{deviceInfo.cordova}}</h3>
+         <h3 *ngIf="deviceInfo">Model: {{deviceInfo.model}}</h3>
+         <h3 *ngIf="deviceInfo">Platform: {{deviceInfo.platform}}</h3>
+         <h3 *ngIf="deviceInfo">UUID: {{deviceInfo.uuid}}</h3>
+         <h3 *ngIf="deviceInfo">Version: {{deviceInfo.version}}</h3>
+         <h3 *ngIf="deviceInfo">Manufacturer: {{deviceInfo.manufaturer}}</h3>
+    </div>
+
+</ion-content>
